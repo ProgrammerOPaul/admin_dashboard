@@ -16,6 +16,7 @@
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 0.8fr 3fr;
+    gap: 15px;
 }
 
 .dashboard{
@@ -45,9 +46,48 @@
     grid-row: 1 / 2;
 }
 
-.content{
+.projects{
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr repeat(3, 1fr);
+    gap: 35px;
+    padding: 15px;
+}
+
+.card{
+    background-color: #483d40;
+    display: grid;
+    grid-template-columns: 0.04fr 1fr; 
+    grid-template-rows: 0.5fr 1fr;
+    
+}
+
+.card .title{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    align-self: center;
+    justify-self: center;
+   
+}
+
+.card p{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    align-self: center;
+    justify-self: center;
+}
+
+.item1{
+    grid-column: 1/2;
+    grid-row: 1/4;
+    background-color: green;
+}
+
+.projects p{
+    grid-column: 1 / -1;
+
 }
 
 .sidebar{
