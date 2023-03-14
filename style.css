@@ -8,7 +8,6 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    color: var(--txt);
 }
 
 .container{
@@ -20,10 +19,25 @@
 }
 
 .dashboard{
+    font-size: 1.5rem;
     background-color: blue;
     grid-column: 1 / 2;
     grid-row: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    padding-left: 22%;
+    padding-top: 5%;
+    gap: 90px;
 }
+
+.dashboard ul{
+    font-size: 1.1rem;
+    list-style: none;
+    display: grid;
+    gap: 14%;
+}
+
+
 
 .header{
     background-color: blanchedalmond;
